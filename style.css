@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #111;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.image-container img:not(:last-child) {
+  margin-right: 10px;
+}
+
+.image-container:hover > :not(:hover) {
+  opacity: 0.3;
+}
